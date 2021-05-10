@@ -3,24 +3,57 @@
   display: flex;
 }
 
-/* 左側の大枠 */
+
+/* 左側の大枠*/
 .side_bar{
   background-color: #253141;
   width: 300px;
   height: 100vh;
 }
 
-
+/* 左側の大枠 上段*/
 .side-bar-header{
   height: 100px;
   padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create-room a {
+  font-size: 10px;
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+/* 左側の大枠 下段*/
 .rooms{
   height: calc(100vh - 100px);
   background-color: #2F3E51;
-  padding: 0 20px;
+  padding:  0 20px;
+  overflow: scroll;
 }
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
 
 /* 右側の大枠 */
 .chat{
@@ -28,17 +61,20 @@
   width: calc(100vw - 300px);
 }
 
+/* 右側の大枠 上段*/
 .chat-header{
   height: 100px;
   padding: 0 40px;
 }
 
+/* 右側の大枠 中断*/
 .messages{
   background-color: #FAFAFA;
   height: calc(100vh - 90px - 100px);
   padding: 46px 40px 0;
 }
 
+/* 右側の大枠 下段*/
 .forms{
   background-color: #DDDDDD;
   height: 90px;
